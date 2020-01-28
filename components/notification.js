@@ -10,7 +10,9 @@ export default withPure(({ href, title, titleMobile, children }) => (
           width: 100%;
           height: 50px;
           text-align: center;
-          background: rgba(0, 0, 0, 0.06);
+          background: #fafafa;
+          border-top: 1px solid #eaeaea;
+          border-bottom: 1px solid #eaeaea;
           display: flex;
           align-items: center;
           justify-content: space-around;
