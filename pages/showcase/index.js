@@ -1,4 +1,3 @@
-import { withRouter } from 'next/router';
 import { SkipNavContent } from '@reach/skip-nav';
 
 import Page from '../../components/page';
@@ -33,20 +32,13 @@ function Showcase({ item }) {
       <Tabs data={categories} anchor>
         {(onSelect, selectedId) => (
           <>
-            <Header
+            <Title
               height={{
-                desktop: 288 - 114
+                desktop: HEADER_HEIGHT + 64,
+                mobile: HEADER_HEIGHT + 64 + 32
               }}
-              shadow
-            >
-              <Title
-                height={{
-                  desktop: HEADER_HEIGHT + 64,
-                  mobile: HEADER_HEIGHT + 64 + 32
-                }}
-              />
-              <Filter onSelect={onSelect} selectedId={selectedId} />
-            </Header>
+            />
+            <Filter onSelect={onSelect} selectedId={selectedId} />
 
             <div className="wrapList">
               <List category={selectedId} />

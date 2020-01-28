@@ -11,7 +11,6 @@ export default withPure(({ href, title, titleMobile, children }) => (
           height: 50px;
           text-align: center;
           background: #fafafa;
-          border-top: 1px solid #eaeaea;
           border-bottom: 1px solid #eaeaea;
           display: flex;
           align-items: center;

@@ -1,8 +1,5 @@
 import Logo from './icons/zeit-white-full-logo';
 
-const text = 'Instantly deploy Next.js sites for free →';
-const mobileText = 'Deploy Next.js sites →';
-
 const Banner = () => {
   return (
     <div className="banner">
@@ -12,7 +9,13 @@ const Banner = () => {
         </a>
 
         <a href="https://zeit.co/new/nextjs" target="_blank" rel="noopener noreferrer">
-          <p />
+          <p>
+            Deploy <b>Next.js</b> on the platform it was made for →
+          </p>
+
+          <p className="mobile">
+            Deploy <b>Next.js</b> for free →
+          </p>
         </a>
       </div>
 
@@ -41,18 +44,13 @@ const Banner = () => {
         }
 
         p {
-          font-weight: 500;
+          color: #fff;
           margin: 0;
-          color: #999;
           transition: color 0.15s ease;
         }
 
-        p::before {
-          content: "${text}";
-        }
-
-        p:hover {
-          color: #fff;
+        .mobile {
+          display: none;
         }
 
         @media (max-width: 640px) {
@@ -60,8 +58,12 @@ const Banner = () => {
             font-size: 14px;
           }
 
-          p::before {
-            content: "${mobileText}";
+          p {
+            display: none;
+          }
+
+          .mobile {
+            display: block;
           }
         }
       `}</style>

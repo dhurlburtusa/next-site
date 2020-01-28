@@ -97,6 +97,7 @@ const Docs = ({ routes, route, data, html }) => {
           </div>
           <style jsx>{`
             .content {
+              position: relative;
               display: flex;
               margin-top: 2rem;
               margin-bottom: 5rem;
