@@ -1,12 +1,17 @@
+import { memo } from 'react';
+import cn from 'classnames';
+
 import Banner from './banner';
+import Nav from './navbar';
 
-export default function Header(props) {
-  const { children } = props;
-
+const Header = ({ sticky = true }) => {
   return (
     <>
       <Banner />
-      <header>{children}</header>
+
+      <header className={cn({ sticky })}>
+        <Nav />
+      </header>
 
       <style jsx>{`
         header {
@@ -19,7 +24,13 @@ export default function Header(props) {
           z-index: 1000;
           border-bottom: 1px solid #eaeaea;
         }
+        header.sticky {
+          position: sticky;
+          top: 0;
+        }
       `}</style>
     </>
   );
-}
+};
+
+export default memo(Header);

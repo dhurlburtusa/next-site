@@ -141,7 +141,7 @@ function Navbar() {
         nav {
           position: relative;
           flex: 1;
-          height: 100px;
+          height: 80px;
           display: flex;
           align-items: center;
         }
