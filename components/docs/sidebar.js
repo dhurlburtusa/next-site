@@ -1,6 +1,4 @@
 import GithubSlugger from 'github-slugger';
-import Header from '../header';
-import Navbar from '../navbar';
 import Container from '../container';
 import ArrowRight from '../icons/arrow-right';
 

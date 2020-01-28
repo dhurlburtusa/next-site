@@ -3,6 +3,7 @@ import { categories, categoriesShort } from '../../showcase-manifest';
 import Popover from '../popover';
 import Container from '../container';
 import HeartIcon from '../icons/heart';
+import Sticky from '../sticky';
 
 const SUBMIT_URL = `https://spectrum.chat/thread/e425a8b6-c9cb-4cd1-90bb-740fb3bd7541`;
 
@@ -11,7 +12,7 @@ export default class extends PureComponent {
     const { onSelect, selectedId } = this.props;
 
     return (
-      <div className="sticky">
+      <Sticky offset={80}>
         <Container center>
           <div className="categories">
             {categoriesShort.map((_, index) => {
@@ -59,17 +60,9 @@ export default class extends PureComponent {
         </Container>
 
         <style jsx>{`
-          .sticky {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: #fff;
-            padding: 0.5rem 0;
-          }
           .categories {
             display: flex;
-            height: 32px;
-            padding: 0 1rem;
+            padding: 0.5rem 1rem;
             align-items: baseline;
             justify-content: center;
             font-weight: 500;
@@ -129,7 +122,7 @@ export default class extends PureComponent {
             }
           }
         `}</style>
-      </div>
+      </Sticky>
     );
   }
 }
