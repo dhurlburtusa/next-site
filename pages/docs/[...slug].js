@@ -83,7 +83,7 @@ const Docs = ({ routes, route, data, html }) => {
   return (
     <Page title={title} description={false} sticky={!isMobile}>
       <PageContent>
-        <Sticky>
+        <Sticky shadow>
           <SidebarMobile>
             <SidebarRoutes isMobile routes={routes} />
           </SidebarMobile>
