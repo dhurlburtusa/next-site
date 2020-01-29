@@ -21,9 +21,9 @@ const Banner = () => {
 
       <style jsx>{`
         .banner {
+          width: 100%;
           background: #000;
           color: #fff;
-          width: 100vw;
           height: 50px;
           display: flex;
           align-items: center;

@@ -28,7 +28,7 @@ export default function Sidebar({ active, children, fixed }) {
           position: sticky;
           top: 100px;
           margin-right: 1rem;
-          height: calc(100vh - 180px);
+          height: 100vh;
           padding-bottom: 0;
           display: flex;
           flex-direction: column;
