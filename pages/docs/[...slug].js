@@ -100,7 +100,6 @@ const Docs = ({ routes, route, data, html }) => {
               position: relative;
               display: flex;
               margin-top: 2rem;
-              margin-bottom: 5rem;
             }
             /* Remove the top margin of the first heading in the sidebar */
             :global(.heading:first-child > h4) {

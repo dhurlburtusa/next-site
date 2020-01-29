@@ -43,8 +43,9 @@ function DocsPage({ path, html }) {
           font-size: 0.875rem;
           justify-content: flex-end;
           border-top: 1px solid #f3f3f3;
-          margin-top: 2.5rem;
           padding: 1.5rem 0;
+          margin-top: 2.5rem;
+          margin-bottom: 5rem;
         }
       `}</style>
       <style jsx global>{`

@@ -26,9 +26,11 @@ export default function Sidebar({ active, children, fixed }) {
         }
         .sidebar.fixed {
           position: sticky;
-          top: 100px;
+          /* content margin + header size */
+          top: calc(2rem + 81px);
           margin-right: 1rem;
-          height: calc(100vh - 200px);
+          /* Full page - content margin - header size - ZEIT banner */
+          height: calc(100vh - 2rem - 81px - 50px);
           padding-bottom: 0;
           display: flex;
           flex-direction: column;
